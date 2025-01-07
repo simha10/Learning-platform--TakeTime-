@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './styles/animations.css';
+
+/* Dark theme colors */
+:root {
+  --primary: #3B82F6;
+  --background: #111827;
+  --card-bg: #1F2937;
+  --text-primary: #F9FAFB;
+  --text-secondary: #D1D5DB;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+/* Transition Defaults */
+* {
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
